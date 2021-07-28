@@ -9,7 +9,7 @@ import verifyContract from './Ethereum/verifyContract.mjs'
 
 
 const app = express()
-const port = 4200
+const port = 8080
 
 app.use(cors())
 app.use(express.urlencoded({extended: true})); 
