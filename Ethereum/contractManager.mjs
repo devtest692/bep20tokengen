@@ -9,7 +9,7 @@ const contractManager = (TokenName,TokenSymbol,Decimals,InitialSupply,Transactio
     const contract_Temp_File_Path = path.resolve(contract_Temp_Path,'Token.sol')
     var contract_temp_File = fs.readFileSync(path.resolve(contract_Temp_File_Path),"utf8")
     for (let i=0; i < params.length; i++) {
-        contract_temp_File = contract_temp_File.replaceAll(params[i],param_values[i])
+        contract_temp_File = contract_temp_File.replace(params[i],param_values[i])
     }
     const contract_folder = path.resolve('Ethereum','contracts')
     fs.writeFileSync(path.resolve(contract_folder,'Token.sol'),contract_temp_File)
