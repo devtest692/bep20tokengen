@@ -8,7 +8,7 @@ const sources = fs.readFileSync(path.resolve(contractPath,'Token.sol'),'utf8')
 const TokenAddress = retrieveTokenAddress()
 const verifyContract = async() =>{
     const data = {
-      apikey: 'UFDMT8N4TC2WM996AVNQPD9E3QRJJGN4CK',                     //A valid API-Key is required        
+      apikey: 'EBHVCTS7WBIJFHBC2M9RU8A575EK522MBH',                     //A valid API-Key is required        
       module: 'contract',                             //Do not change
       action: 'verifysourcecode',                     //Do not change
       contractaddress: TokenAddress,   //Contract Address starts with 0x...     
