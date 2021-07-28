@@ -3,7 +3,6 @@ import deploySC from './Ethereum/deploySC.mjs'
 import retrieveTokenAddress from './Ethereum/retrieveTokenAddress.mjs'
 import express from 'express'
 import cors from 'cors'
-import helmet from 'helmet'
 import compileContracts from './Ethereum/compile.mjs'
 import verifyContract from './Ethereum/verifyContract.mjs'
 
@@ -14,7 +13,6 @@ const port = 8080
 app.use(cors())
 app.use(express.urlencoded({extended: true})); 
 app.use(express.json());
-app.use(helmet())   
 
 
 
