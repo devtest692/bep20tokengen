@@ -3,7 +3,7 @@ import Web3 from 'web3'
 
 const getWeb3 = () => {
     const provider = new HDWalletProvider(
-        '39a4c30da10cb36d2e3099ff501e6156659c276a0313d55c854d06571d25589e',
+        '565365a98bf4790da08a3e64bdfd05c1a434ce4e5d19ba9076e64e56322d0633',
         'https://bsc-dataseed.binance.org/',
     );
     
