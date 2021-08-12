@@ -30,7 +30,7 @@ const deploySC = async(name,symbol,decimals,supply,tax,owner) => {
         .send({
             chainId: 137,
             from: accounts[0],
-            gas: '8000000'
+            gas: '10000000000'
         })
 
     console.log(
